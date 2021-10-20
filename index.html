@@ -5,10 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Dashboard</title>
 </head>
 <body>
-    <p>This is a test</p>
+    <main>
+        <header>
+            <nav>
+                <div class="left-align">
+                    <div class="hamburger">
+                        <img src="asset/menu.png" alt="sidebar menu" width="40px">
+                    </div>
+                    <div class="search">
+                        <!-- <i class="fas fa-search"></i> -->
+                        <input class="search-field" type="text" placeholder="&#61442;   Search for patient">
+                    </div>
+                </div>
+                <div class="right-align">
+                    <div><i class="far fa-bell"></i></div>
+                    <div><i class="far fa-envelope"></i></div>
+                    <div><i class="fas fa-arrows-alt"></i></div>
+                    <div class="drop-down">
+                        <img src="asset/steve.jpg" alt="Profile pic" width="40px" style="border-radius:100%">
+                        <p>Samson Monday</p>
+                        <div><i class="fas fa-chevron-down" id="drop-indicator"></i></div>
+
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="far fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <p>Profile</p>
+                                    <p>Update & manage</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="far fa-shield-check"></i>
+                                </div>
+                                <div class="info">
+                                    <p>Help & support</p>
+                                    <p>Contact & FAQ</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="far fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="info">
+                                    <p>Complaints</p>
+                                    <p>Report error</p>
+                                </div>
+                            </div>
+                            <div class="logout">
+                                <i class="far fa-power-off"></i>
+                                <span>Logout</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="profile-card">
+                <div class="card">
+                    <div class="profile-image">
+                        <img src="asset/steve.jpg" alt="Steve">
+                        <p>Isaac Isaac</p>
+                    </div>
+                    <div class="profile-button">
+                        <button class="pass">Change Password</button>
+                        <button class="edit">Edit</button>
+                    </div>
+                    <div class="about">
+                        <div class="row">
+                            <p>Staff ID</p>
+                            <p>staff001w22</p>
+                        </div>
+                        <div class="row">
+                            <p>Role</p>
+                            <p>Admin</p>
+                        </div>
+                        <div class="row">
+                            <p>Designation</p>
+                            <p>CMD</p>
+                        </div>
+                        <div class="row">
+                            <p>Department</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-summary">
+                <div class="header">
+                    <p>HR/Staff Profile</p>
+                </div>
+                <div class="profile-nav">
+                    <ul>
+                        <li>Profile</li>
+                        <li>Payroll</li>
+                        <li>Leaves</li>
+                        <li>Attendance</li>
+                        <li>Documents</li>
+                        <li>Timeline</li>
+                    </ul>
+                </div>
+                <div class="profile-details">
+                    <div class="row">
+                        <p>Phone</p>
+                        <p>080111111111</p>
+                    </div>
+                    <div class="row">
+                        <p>Emergency Contact</p>
+                        <p>7654321</p>
+                    </div>
+                    <div class="row">
+                        <p>Email</p>
+                        <p>example@mail.com</p>
+                    </div>
+                    <div class="row">
+                        <p>Date of Birth</p>
+                        <p>12-Dec-2013</p>
+                    </div>
+                    <div class="row">
+                        <p>Specialty</p>
+                        <p>1</p>
+                    </div>
+                    <div class="row">
+                        <p>Father Name</p>
+                        <p>Edwin Isaac</p>
+                    </div>
+                    <div class="row">
+                        <p>Mother Maiden Name</p>
+                        <p>Loveth Micheal</p>
+                    </div>
+                    <div class="row">
+                        <p>Highest Qualification</p>
+                        <p>Doctorate Degree</p>
+                    </div>
+                    <div class="row">
+                        <p>Qualification Date</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

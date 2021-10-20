@@ -1,0 +1,158 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.1rem;
+}
+
+body {
+    background-color: #f9f2ec;
+    overflow-x: hidden;
+}
+
+nav,
+.left-align,
+.right-align,
+.drop-down,
+.dropdown-content .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    border-bottom:  1px solid rgb(190, 190, 190) ;
+}
+
+.search-field{
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+}
+.hamburger img{
+    margin: 2px 10px;
+}
+
+.search{
+    border-left: 1px solid rgb(190, 190, 190);
+}
+
+.search input{
+    outline:none;
+    background-color: #f9f2ec;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+}
+
+.right-align div{
+    margin: 0 10px;
+}
+
+.right-align .fa-arrows-alt{
+    transform: rotate(45deg);
+}
+
+.drop-down p{
+    margin: 0 5px;
+}
+
+.dropdown-content{
+    display: none;
+    width: max-content;
+    position: absolute;
+    padding-top: 10px;
+    top: 60px;
+    right: 15px;
+    background-color: #ffffff;
+}
+
+
+.dropdown-content .row{
+    justify-content: flex-start;
+}
+
+.dropdown-content .row:hover{
+    background-color: bisque;
+}
+
+.dropdown-content .logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 5px;
+}
+.dropdown-content .logout span{
+    color: black;
+}
+
+.profile-card{
+    background-color: #ffffff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    width: 280px;
+}
+.profile-card .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.profile-image p{
+    font-size: 18px;
+    color: orangered;
+    text-align: center;
+}
+.profile-image img{
+    max-width: 80%;
+    width: 80%;
+}
+
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.profile-button{
+    margin: 10px auto;
+}
+.profile-button .pass{
+    background-color: orangered;
+    color: white;  
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px ;
+    margin-right:5px;
+}
+
+.profile-button .edit{
+    background-color: white;
+    border: 1px solid orangered;  
+    border-radius: 3px;
+    padding: 5px 8px ;
+    margin-left:5px;
+}
+
+.profile-button .edit:hover, .profile-button .pass:hover{
+    transform: scale(1.1);
+}
+
+.profile-card .about .row{
+    padding: 8px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.profile-card .about .row:hover{
+    background-color: bisque;
+}
+
