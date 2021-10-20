@@ -1,5 +1,7 @@
 const profileDropdown = document.querySelector('.drop-down');
 let dropIndicator = document.querySelector('#drop-indicator')
+let profileDetails = document.querySelectorAll('.row-profile'), i;
+
 
 profileDropdown.addEventListener('click' , myFunction)
     
@@ -14,4 +16,10 @@ function myFunction(){
         dropIndicator.classList.remove('fa-chevron-up')
         dropdownContent.style.display = "none";
     }
+}
+
+console.log("looking" , profileDetails)
+
+for(i = 0; i < profileDetails.length; i = i + 2){
+    profileDetails[i].style.backgroundColor = "bisque";
 }
