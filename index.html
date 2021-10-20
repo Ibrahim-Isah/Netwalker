@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="right-align">
-                    <div><i class="far fa-bell"></i></div>
+                    <div class="notify"><i class="far fa-bell"></i> <div class="point"></div></div>
                     <div><i class="far fa-envelope"></i></div>
                     <div><i class="fas fa-arrows-alt"></i></div>
                     <div class="drop-down">
@@ -109,7 +109,7 @@
                 </div>
                 <div class="profile-nav">
                     <ul>
-                        <li>Profile</li>
+                        <li style="background-color: orangered; color: white; transform: scale(1.1);">Profile</li>
                         <li>Payroll</li>
                         <li>Leaves</li>
                         <li>Attendance</li>
@@ -158,6 +158,84 @@
             </div>
         </section>
     </main>
+        <aside>
+            <div id="mySidenav" class="sidenav">
+                <div class="general">      
+                <div class="logo">
+                    <img src="asset/logo.png" alt="Company logo" width="70px">
+                </div>
+                    <button>
+                        <div>
+                            <i class="fal fa-layer-group"></i>
+                            <p>Bed Status</p>
+                        </div>
+                        <div >
+                            <i class="fal fa-arrow-right"></i>
+                        </div>
+                </button>
+                    
+                <div class="item-list">
+                    <ul>
+                        <li>
+                            <div><i class="far fa-briefcase"></i> 
+                                <p>Front Office</p>
+                            </div> <i class="fas fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <div><i class="far fa-briefcase"></i>
+                                <p>HIS</p>
+                            </div> <i class="fas fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <div><i class="far fa-briefcase"></i>
+                                <p>Blood Bank</p>
+                            </div> 
+                        </li>
+                        <li class="dropLIS" style="display:block">
+                            <div style="display:flex">
+                                <div style="display:flex;">
+                                    <i class="far fa-briefcase" style="margin-right: 10px;"></i>
+                                    <p>LIS</p>
+                                </div> <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <ul class="show-LIS">
+                                <li>Order</li>
+                                <li>OC</li>
+                                <li>Phleb</li>
+                                <li>Analysers</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><i class="far fa-briefcase"></i>
+                                <p>RIS</p>
+                            </div> 
+                        </li>
+                        <li>
+                            <div><i class="far fa-briefcase"></i>
+                                <p>Insurance</p>
+                            </div> 
+                        </li>
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <div class="copyright">
+                <p>CliniquePlus EMR by Netwalkers NG &copy; 2021. All right reserved.</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms Of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+main{
+    margin-left: 0;
+}
+
 nav,
 .left-align,
 .right-align,
@@ -56,6 +60,17 @@ nav{
 .right-align .fa-arrows-alt{
     transform: rotate(45deg);
 }
+.right-align .notify{
+    display: flex;
+    margin: 0 -5px;
+}
+.right-align .point{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: orangered;
+    margin-left: -1px;
+}
 
 .drop-down p{
     margin: 0 5px;
@@ -69,6 +84,13 @@ nav{
     top: 60px;
     right: 15px;
     background-color: #ffffff;
+}
+
+.dropdown-content .icon{
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 100%;
+    color: orangered;
+    padding: 5px 5px;
 }
 
 
@@ -91,6 +113,7 @@ nav{
 }
 .dropdown-content .logout span{
     color: black;
+    margin-left: 5px;
 }
 
 /*Main body*/
@@ -195,10 +218,12 @@ section{
 }
 
 .profile-nav li:hover{
-    color: #ffffff;
-    background-color: orangered;
+    color: #000000;
+    background-color: rgb(255, 173, 144);
     transform: scale(1.1);
 }
+
+
 
 .profile-details {
     background-color: #ffffff;
@@ -210,4 +235,130 @@ section{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(184, 183, 183);
+}
+/*Sidebar*/
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #ffffff; 
+  overflow-x: hidden; 
+  padding-top: 40px;
+  transition: 0.3s; 
+}
+
+.sidenav div {
+    margin: 10px 0;
+}
+
+.sidenav .general{
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#mySidenav{
+    width: 0;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav ul li{
+    list-style: none;
+}
+.sidenav .logo {
+    margin-bottom: 30px;
+}
+.sidenav button, .sidenav button > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidenav button {
+    display: flex;
+    width: 90%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 20px 8px 8px 20px;
+}
+
+.sidenav button div i{
+    border-radius: 100%;
+    background-color: rgb(202, 57, 4);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.sidenav .item-list li , .sidenav .item-list li > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .sidenav .item-list li > div > i{
+     margin-right: 10px;
+ }
+
+ .show-LIS{
+     display: block;
+     background-color: #e0dcdc;
+     width: 100%;
+
+ }
+
+ .show-LIS li{
+     padding: 10px 10px;
+ }
+
+ .show-LIS li:hover{
+     background-color: #bbb9b9;
+ }
+
+/*Footer Section*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5px 20px;
+    z-index: 3;
+}
+
+.footer-nav ul{
+    display: flex;
+}
+
+.footer-nav ul li{
+    list-style: none;
+    border-right: 1px solid rgb(184, 183, 183);
+    margin: auto 5px;
+    padding: 20px auto;
+}
+
+.footer-nav ul li a{
+    text-decoration: none;
+    color: black;
 }
